@@ -1,0 +1,16 @@
+#N canvas 0 0 450 300 10;
+#X obj 82 110 osc~ \$1;
+#X obj 82 79 inlet;
+#X obj 80 234 *~ \$3;
+#X obj 80 152 *~;
+#X obj 77 268 outlet~;
+#X obj 351 58 inlet index;
+#X obj 162 80 inlet carr;
+#X obj 162 109 ../non_linear/chebychev.seventh \$2 \$3;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 5 0 7 1;
+#X connect 6 0 7 0;
+#X connect 7 0 3 1;

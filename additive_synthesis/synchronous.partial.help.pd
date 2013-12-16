@@ -1,0 +1,21 @@
+#N canvas 481 255 450 297 10;
+#X obj 5 231 dac~;
+#X obj 208 19 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 7 20 phasor~ 400;
+#X obj 89 168 synchronous.partial 4.08 300 9000 400;
+#X obj 9 61 synchronous.partial 1 100 3000 400;
+#X obj 63 96 synchronous.partial 2.02 100 4000 400;
+#X obj 78 132 synchronous.partial 3.05 100 5000 400;
+#X connect 1 0 3 1;
+#X connect 1 0 4 1;
+#X connect 1 0 5 1;
+#X connect 1 0 6 1;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
+#X connect 2 0 5 0;
+#X connect 2 0 6 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 1;
+#X connect 6 0 0 0;

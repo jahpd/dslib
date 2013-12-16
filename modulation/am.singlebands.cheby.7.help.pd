@@ -1,0 +1,17 @@
+#N canvas 545 94 791 425 10;
+#X obj 30 356 dac~;
+#X obj 28 132 ../mono.gram;
+#X obj 187 34 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 238 70 hsl 128 15 0 2 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4700 1;
+#X floatatom 172 71 5 0 0 0 - - -;
+#X obj 291 101 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4700 1;
+#X obj 28 93 am.singlebands.cheby.7 400 300 0.5 0.5;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 4 0;
+#X connect 2 0 6 2;
+#X connect 3 0 6 3;
+#X connect 6 0 1 0;

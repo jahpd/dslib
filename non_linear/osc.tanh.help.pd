@@ -1,0 +1,8 @@
+#N canvas 515 202 791 425 10;
+#X obj 30 356 dac~;
+#X obj 28 132 ../mono.gram;
+#X obj 164 72 tanh;
+#X obj 28 93 osc.tanh 400 0.5;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 3 0 1 0;

@@ -1,0 +1,10 @@
+#N canvas 515 202 791 425 10;
+#X obj 30 356 dac~;
+#X obj 28 132 ../mono.gram;
+#X obj 29 93 chebychev.second 400 0.5;
+#X obj 89 62 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 2 1;

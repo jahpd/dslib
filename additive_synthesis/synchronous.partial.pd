@@ -1,0 +1,23 @@
+#N canvas 287 96 575 262 10;
+#X obj 20 60 *~ 1;
+#X obj 19 104 cos~;
+#X obj 20 18 inlet~ phase;
+#X obj 112 16 inlet play;
+#X obj 112 62 del \$4;
+#X obj 112 103 pack \$2 \$3;
+#X msg 112 140 1 \$1 0 \, 0 \$2 \$1;
+#X obj 112 173 vline~;
+#X obj 19 209 *~;
+#X obj 20 239 outlet~;
+#X text 238 14 Synchronous \, phase aligned additive synthesis model
+;
+#X text 239 31 From "Design Sound" (Farnnel \, A.) \, p. 254;
+#X connect 0 0 1 0;
+#X connect 1 0 8 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 1;
+#X connect 8 0 9 0;

@@ -1,0 +1,25 @@
+#N canvas 0 0 450 300 10;
+#X obj 89 80 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 89 37 >~ 0;
+#X obj 89 59 avg~;
+#X obj 26 143 spigot~;
+#X obj 25 19 inlet~;
+#X obj 25 207 outlet~;
+#X obj 89 207 outlet;
+#X obj 89 143 metro \$1;
+#X obj 111 177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 141 81 5 0 0 0 - - -;
+#X obj 90 106 t i f;
+#X connect 0 0 10 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 2 0 9 0;
+#X connect 3 0 5 0;
+#X connect 4 0 1 0;
+#X connect 4 0 3 0;
+#X connect 7 0 6 0;
+#X connect 7 0 8 0;
+#X connect 10 0 7 0;
+#X connect 10 1 3 1;

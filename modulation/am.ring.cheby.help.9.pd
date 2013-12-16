@@ -1,0 +1,18 @@
+#N canvas 534 105 535 445 10;
+#X obj 18 187 ../mono.gram;
+#X obj 179 106 hsl 128 15 0 5 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2000 1;
+#X floatatom 231 131 5 0 0 0 - - -;
+#X obj 24 405 dac~;
+#X obj 39 119 hsl 128 15 55 220 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12000 1;
+#X obj 268 156 hsl 128 15 0 0.5 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 26 149 am.ring.cheby.9 55 220 0.2 0;
+#X connect 0 0 3 0;
+#X connect 0 0 3 1;
+#X connect 1 0 2 0;
+#X connect 1 0 6 2;
+#X connect 4 0 6 1;
+#X connect 5 0 6 3;
+#X connect 6 0 0 0;

@@ -1,0 +1,15 @@
+#N canvas 515 202 791 425 10;
+#X obj 30 356 dac~;
+#X obj 28 132 ../mono.gram;
+#X obj 153 44 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 250 95 hsl 128 15 0 2 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9900 1;
+#X floatatom 172 71 5 0 0 0 - - -;
+#X obj 28 93 am.sidebands.tanh 400 500 0.5 0.7;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 4 0;
+#X connect 2 0 5 2;
+#X connect 3 0 5 3;
+#X connect 5 0 1 0;
