@@ -1,18 +1,19 @@
-#N canvas 545 94 791 425 10;
+#N canvas 109 16 791 425 10;
 #X obj 30 356 dac~;
 #X obj 28 132 ../mono.gram;
-#X obj 151 44 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1100 1;
-#X obj 238 70 hsl 128 15 0 2 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
-#X floatatom 172 71 5 0 0 0 - - -;
-#X obj 291 101 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 4700 1;
-#X obj 28 93 am.singlebands.tanh 400 300 0.5 0.5 0.7;
+#X obj 192 30 hsl 128 15 0 1.5 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4300 1;
+#X msg 190 57 index \$1;
+#X obj 27 92 am.singlebands.cheby.3 110 113 0.1 0.1;
+#X obj 47 28 hsl 128 15 1 300 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5600 1;
+#X msg 45 55 mod \$1;
+#X floatatom 98 52 5 0 0 0 - - -;
 #X connect 1 0 0 0;
 #X connect 1 0 0 1;
-#X connect 2 0 4 0;
-#X connect 2 0 6 2;
-#X connect 3 0 6 3;
-#X connect 5 0 6 4;
-#X connect 6 0 1 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 4 0;

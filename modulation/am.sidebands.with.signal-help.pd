@@ -1,0 +1,16 @@
+#N canvas 451 130 750 440 10;
+#X obj 17 140 ../mono.gram;
+#X obj 18 352 dac~;
+#X obj 16 68 ../waveforms/waveform.lf.square~ 1 70 0.71;
+#X msg 18 42 freq \$1;
+#X obj 23 18 hsl 512 15 0 512 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 78 43 5 0 0 0 - - -;
+#X obj 15 101 am.sidebands.with.signal 3 1;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 6 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 4 0 5 0;
+#X connect 6 0 0 0;

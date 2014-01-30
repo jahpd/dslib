@@ -1,0 +1,17 @@
+#N canvas 853 48 408 248 10;
+#X obj 23 137 wire.transmission.medium;
+#X obj 23 186 dac~;
+#X obj 22 98 *~;
+#X obj 225 60 buser 2 10000 1 100;
+#X obj 226 37 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 21 26 dialtone;
+#X obj 337 82 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+0.999998;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 0 0;
+#X connect 3 0 2 1;
+#X connect 3 1 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 2 0;

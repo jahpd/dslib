@@ -1,0 +1,111 @@
+#N canvas 316 76 818 545 10;
+#X obj 330 251 dtmf.toner 697 1209 100 200;
+#X obj 330 229 r \$0-one;
+#X obj 330 274 throw~ \$0-ONE;
+#X obj 504 228 r \$0-two;
+#X obj 504 273 throw~ \$0-TWO;
+#X obj 690 227 r \$0-three;
+#X obj 690 272 throw~ \$0-THREE;
+#X obj 330 321 dtmf.toner 770 1209 100 200;
+#X obj 329 393 dtmf.toner 852 1209 100 200;
+#X obj 329 467 dtmf.toner 941 1209 100 200;
+#X obj 504 250 dtmf.toner 697 1336 100 200;
+#X obj 504 320 dtmf.toner 770 1336 100 200;
+#X obj 503 392 dtmf.toner 852 1336 100 200;
+#X obj 503 466 dtmf.toner 941 1336 100 200;
+#X obj 330 299 r \$0-four;
+#X obj 504 299 r \$0-five;
+#X obj 690 297 r \$0-six;
+#X obj 329 371 r \$0-seven;
+#X obj 503 370 r \$0-eight;
+#X obj 689 369 r \$0-nine;
+#X obj 329 445 r \$0-ast;
+#X obj 329 490 throw~ \$0-AST;
+#X obj 503 444 r \$0-zero;
+#X obj 503 489 throw~ \$0-ZERO;
+#X obj 689 488 throw~ \$0-SHARP;
+#X obj 689 442 r \$0-sharp;
+#X obj 690 249 dtmf.toner 697 1477 100 200;
+#X obj 690 319 dtmf.toner 770 1477 100 200;
+#X obj 689 391 dtmf.toner 852 1477 100 200;
+#X obj 689 467 dtmf.toner 941 1477 100 200;
+#X obj 110 120 bng 30 250 50 1 \$0-one empty 1 11 14 0 14 -262144 -1
+-1;
+#X obj 145 120 bng 30 250 50 1 \$0-two empty 2 11 14 0 14 -262144 -1
+-1;
+#X obj 179 120 bng 30 250 50 1 \$0-three empty 3 11 14 0 14 -262144
+-1 -1;
+#X obj 110 154 bng 30 250 50 1 \$0-four empty 4 11 14 0 14 -262144
+-1 -1;
+#X obj 145 154 bng 30 250 50 1 \$0-five empty 5 11 14 0 14 -262144
+-1 -1;
+#X obj 179 154 bng 30 250 50 1 \$0-six empty 6 11 14 0 14 -262144 -1
+-1;
+#X obj 110 188 bng 30 250 50 1 \$0-seven empty 7 11 14 0 14 -262144
+-1 -1;
+#X obj 145 188 bng 30 250 50 1 \$0-eight empty 8 11 14 0 14 -262144
+-1 -1;
+#X obj 179 188 bng 30 250 50 1 \$0-nine empty 9 11 14 0 14 -262144
+-1 -1;
+#X obj 110 221 bng 30 250 50 1 \$0-ast empty * 11 14 0 14 -262144 -1
+-1;
+#X obj 145 221 bng 30 250 50 1 \$0-zero empty 0 11 14 0 14 -262144
+-1 -1;
+#X obj 179 221 bng 30 250 50 1 \$0-sharp empty $ 11 14 0 14 -262144
+-1 -1;
+#X obj 330 344 throw~ \$0-FOUR;
+#X obj 504 343 throw~ \$0-FIVE;
+#X obj 690 342 throw~ \$0-SIX;
+#X obj 329 416 throw~ \$0-SEVEN;
+#X obj 503 415 throw~ \$0-EIGHT;
+#X obj 689 414 throw~ \$0-NINE;
+#X obj 35 376 catch~ \$0-ONE;
+#X obj 122 376 catch~ \$0-TWO;
+#X obj 211 376 catch~ \$0-THREE;
+#X obj 34 403 catch~ \$0-FOUR;
+#X obj 126 403 catch~ \$0-FIVE;
+#X obj 222 402 catch~ \$0-SIX;
+#X obj 33 427 catch~ \$0-SEVEN;
+#X obj 134 427 catch~ \$0-EIGHT;
+#X obj 231 426 catch~ \$0-NINE;
+#X obj 33 452 catch~ \$0-AST;
+#X obj 134 452 catch~ \$0-ZERO;
+#X obj 230 451 catch~ \$0-SHARP;
+#X obj 64 501 outlet~;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 3 0 10 0;
+#X connect 5 0 26 0;
+#X connect 7 0 42 0;
+#X connect 8 0 45 0;
+#X connect 9 0 21 0;
+#X connect 10 0 4 0;
+#X connect 11 0 43 0;
+#X connect 12 0 46 0;
+#X connect 13 0 23 0;
+#X connect 14 0 7 0;
+#X connect 15 0 11 0;
+#X connect 16 0 27 0;
+#X connect 17 0 8 0;
+#X connect 18 0 12 0;
+#X connect 19 0 28 0;
+#X connect 20 0 9 0;
+#X connect 22 0 13 0;
+#X connect 25 0 29 0;
+#X connect 26 0 6 0;
+#X connect 27 0 44 0;
+#X connect 28 0 47 0;
+#X connect 29 0 24 0;
+#X connect 48 0 60 0;
+#X connect 49 0 60 0;
+#X connect 50 0 60 0;
+#X connect 51 0 60 0;
+#X connect 52 0 60 0;
+#X connect 53 0 60 0;
+#X connect 54 0 60 0;
+#X connect 55 0 60 0;
+#X connect 56 0 60 0;
+#X connect 57 0 60 0;
+#X connect 58 0 60 0;
+#X connect 59 0 60 0;
+#X coords 0 -1 1 1 120 160 1 100 100;

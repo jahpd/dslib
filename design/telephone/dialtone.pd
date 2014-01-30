@@ -1,0 +1,33 @@
+#N canvas 465 5 536 393 10;
+#X obj 107 121 hsl 128 15 0 1 0 0 empty empty index 2 8 0 10 -262144
+-1 -1 0 1;
+#N canvas 670 128 450 300 indexer 0;
+#X obj 58 20 inlet;
+#X obj 57 91 outlet;
+#X obj 107 91 outlet;
+#X obj 98 49 expr 1 - $f1;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 3 0 2 0;
+#X restore 104 188 pd indexer;
+#X msg 104 216 carIndex \$1;
+#X msg 184 216 modIndex \$1;
+#X obj 104 250 ../../additive_synthesis/add 350 440 0.125 0.5 0.5;
+#X msg 263 216 amp \$1;
+#X obj 107 140 hsl 128 15 0 1 0 0 empty empty volume 2 8 0 10 -262144
+-1 -1 9100 1;
+#X obj 105 351 outlet~;
+#X obj 223 103 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 103 299 *~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 4 0 9 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 8 0 9 1;
+#X connect 9 0 7 0;
+#X coords 0 -1 1 1 150 60 1 100 100;

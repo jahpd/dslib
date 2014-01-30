@@ -1,0 +1,7 @@
+#N canvas 34 45 392 260 10;
+#X obj 10 27 dialtone;
+#X obj 12 138 wire.transmission.medium;
+#X obj 12 187 dac~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;

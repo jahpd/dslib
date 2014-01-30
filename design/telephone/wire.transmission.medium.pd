@@ -1,0 +1,11 @@
+#N canvas 464 143 684 401 10;
+#X obj 48 27 inlet~;
+#X obj 117 26 inlet;
+#X obj 46 217 outlet~;
+#X obj 47 149 wire.distortion 0.9 2000 12;
+#X obj 46 184 loudspeaker.distortion 0.5 400 3 0.4 0.15 90;
+#X connect 0 0 3 0;
+#X connect 1 0 3 1;
+#X connect 1 0 4 1;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;

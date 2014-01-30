@@ -1,0 +1,18 @@
+#N canvas 586 205 450 300 10;
+#X obj 113 -1001 ../../waveforms/waveform.lf.square~ 2 70 1;
+#X obj 113 -974 ../../modulation/am.singlebands.cheby.3.with.signal
+800 1 1;
+#X obj 34 -815 dac~;
+#X obj 67 -987 sig~ 1;
+#X obj 67 -957 -~;
+#X obj 34 -876 *~;
+#X obj 35 -844 *~ 0.2;
+#X obj 34 -903 osc~ 660;
+#X connect 0 0 1 0;
+#X connect 1 0 4 1;
+#X connect 3 0 4 0;
+#X connect 4 0 5 1;
+#X connect 5 0 6 0;
+#X connect 6 0 2 0;
+#X connect 6 0 2 1;
+#X connect 7 0 5 0;

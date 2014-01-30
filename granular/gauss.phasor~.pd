@@ -1,0 +1,38 @@
+#N canvas 0 0 469 354 10;
+#X obj -192 26 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj -192 83 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -194 191 expr $f1+$f2;
+#X obj -125 156 \$1;
+#X obj -192 48 gauss.metro \$2 \$3;
+#X obj -40 10 loadbang;
+#X obj -40 34 t b b;
+#X obj 36 27 inlet;
+#X obj 36 52 route stop start;
+#X msg 35 75 0;
+#X msg 83 74 1;
+#X obj -192 305 outlet~;
+#X obj -193 236 line;
+#X msg -193 215 \$1 30;
+#X floatatom -193 255 5 0 0 0 - - -;
+#X obj -192 280 osc~ \$1;
+#X obj -194 112 gauss.number \$1;
+#X connect 0 0 4 0;
+#X connect 1 0 16 0;
+#X connect 2 0 13 0;
+#X connect 3 0 2 1;
+#X connect 4 0 1 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
+#X connect 6 1 3 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 8 1 10 0;
+#X connect 9 0 0 0;
+#X connect 10 0 0 0;
+#X connect 12 0 14 0;
+#X connect 13 0 12 0;
+#X connect 14 0 15 0;
+#X connect 15 0 11 0;
+#X connect 16 0 2 0;

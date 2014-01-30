@@ -1,0 +1,20 @@
+#N canvas 364 38 724 593 10;
+#X obj 105 302 outlet;
+#X obj 298 305 outlet;
+#X obj 298 278 change.string.position;
+#X obj 157 144 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 156 193 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 131 168 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 182 168 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 105 274 change.string.position \$1 \$1;
+#X connect 2 0 1 0;
+#X connect 3 0 7 1;
+#X connect 4 0 7 3;
+#X connect 5 0 7 2;
+#X connect 6 0 7 0;
+#X connect 7 0 0 0;
+#X coords 0 -1 1 1 300 160 1 100 100;

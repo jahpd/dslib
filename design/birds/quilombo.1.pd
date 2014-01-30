@@ -1,0 +1,14 @@
+#N canvas 528 147 759 327 10;
+#X text 325 19 Objetivo;
+#X text 326 34 Criar um som de passaro ouvido no quilomb da fazenda
+;
+#X text 357 52 - Gravação: - Descricao: som curto \, provavelmente
+800ms \, uma unica nota \, repetida calmamente \; o timbre lembra alguma
+modulacao com caracteristas harmonicas;
+#X obj 11 306 dac~;
+#X obj 12 96 ../../env.maker 400;
+#X obj 229 100 ../../mono.gram;
+#X obj 11 20 ../../modulation/am.allbands 1000 11 1;
+#X connect 4 0 3 0;
+#X connect 4 0 5 0;
+#X connect 6 0 4 0;

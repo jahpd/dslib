@@ -1,0 +1,23 @@
+#N canvas 636 101 450 300 10;
+#X obj 72 25 inlet;
+#X obj 70 224 *~ \$3;
+#X obj 70 142 *~;
+#X obj 69 258 outlet~;
+#X obj 71 185 *~ 0.5;
+#X obj 71 100 sig~ \$1;
+#X obj 138 100 ../non_linear/osc.tanh \$2 1;
+#X obj 72 48 route carrier car modulator mod amplification amp index
+;
+#X connect 0 0 7 0;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 4 0 1 0;
+#X connect 5 0 2 0;
+#X connect 6 0 2 1;
+#X connect 7 0 5 0;
+#X connect 7 1 5 0;
+#X connect 7 2 6 0;
+#X connect 7 3 6 0;
+#X connect 7 4 1 1;
+#X connect 7 5 1 1;
+#X connect 7 6 6 1;

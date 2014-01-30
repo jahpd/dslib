@@ -1,0 +1,7 @@
+#N canvas 629 305 450 300 10;
+#X obj 8 35 ../mono.gram;
+#X obj 8 238 dac~;
+#X obj 6 12 waveform.lf.square~ 1000 30 0.9;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 0 0;

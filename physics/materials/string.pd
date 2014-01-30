@@ -1,0 +1,2 @@
+#N canvas 348 132 450 300 10;
+#X obj 43 111 s pd-stringer.pd;
