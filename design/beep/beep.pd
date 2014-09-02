@@ -40,7 +40,7 @@ generate some partials;
 #X obj 227 0 loadbang;
 #X obj 217 95 \$2;
 #X obj 268 102 \$3;
-#X obj 4 212 ../modulation/am.singlebands.tanh.sig 1 \$2 0;
+#X obj 4 212 ../../modulation/am.singlebands.tanh.sig 1 \$2 0;
 #X connect 1 0 14 0;
 #X connect 2 0 9 0;
 #X connect 3 0 9 0;
