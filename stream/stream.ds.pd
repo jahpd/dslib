@@ -14,7 +14,7 @@
 #X obj 36 539 ../webcastPD/cast.server~;
 #X obj 51 466 dbtorms;
 #X obj 58 440 hsl 128 15 1 100 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 4600 1;
+-1 -1 6542 1;
 #X obj 115 34 ../modulation/am.singlebands.cheby.5 220 56 10 0.9;
 #X obj 477 33 ../modulation/am.singlebands.cheby.6 221 54 2 0.6;
 #N canvas 534 387 450 300 reverb 0;
@@ -111,7 +111,7 @@
 #X msg -2416 -4036 stop;
 #X obj -2374 -3953 dbtorms;
 #X obj -2367 -3979 hsl 128 15 1 100 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 7184 1;
+-262144 -1 -1 11545 1;
 #X floatatom -2378 -3920 5 0 0 0 - - -;
 #X obj -2468 -3958 *~;
 #X obj -2441 -3961 *~;
@@ -180,4 +180,5 @@
 #X connect 18 0 11 1;
 #X connect 19 0 16 0;
 #X connect 19 1 16 1;
+#X connect 19 2 13 0;
 #X connect 20 0 19 0;
