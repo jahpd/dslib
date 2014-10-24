@@ -4,7 +4,32 @@ This is my personal library of abstractions for [PureData](http://puredata.info/
 
 # What do?
 
-Until now, I built some basic abstractions for design spectra (AM, FM) and granular synthesis:
+Until now, I built some basic abstractions for design spectra
+([AM](https://en.wikipedia.org/wiki/Amplitude_modulation),
+[FM](https://en.wikipedia.org/wiki/Frequency_modulation)) with some
+customized functions, like non-linear ones (that add some nice complex
+features to spectra).
+
+Added to some examples and design sound exercises from Andy Farnell [Book](mitpress.mit.edu/books/designing-sound)
+granular synthesis:
+
+## Installation
+
+If you have linux or mac, i suggest the following:
+
+    $ git clone https://www.github.com/jahpd/dslib.git
+
+If you have windows, i suggest download github application and then
+download the source code from the application.
+
+Open PureData, go to _Prefereces_ and then add the properly path
+search;
+
+![http://booki.flossmanuals.net/pure-data/_full/static/PureData-InstallingOSX-osx-install-7-en.png]
+
+In my machine is something like:
+
+    ~/path/to/dslib/
 
 ## Additive
 
