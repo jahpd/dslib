@@ -1,4 +1,4 @@
-#N canvas 43 324 669 575 10;
+#N canvas 712 229 669 575 10;
 #X obj 128 48 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 147 48 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -6,15 +6,32 @@
 #X obj 170 47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 128 136 dac~;
-#X msg 224 96 cl_hat 10 10000 10 10 800 1;
-#X msg 224 72 kick 100 1000 100 10 800 1;
-#X msg 224 50 snare 200 50 50 500 1;
 #X obj 130 106 ./drum~;
-#X connect 0 0 7 0;
-#X connect 1 0 7 1;
-#X connect 2 0 7 2;
-#X connect 4 0 7 3;
-#X connect 5 0 7 3;
-#X connect 6 0 7 3;
-#X connect 7 0 3 0;
-#X connect 7 0 3 1;
+#X msg 224 96 cl_hat 10 10000 20 10 800 1;
+#X obj 104 174 key;
+#X floatatom 101 204 5 0 0 0 - - -;
+#X msg 224 50 snare 100 109 50 16000 0.5;
+#X text 148 23 X;
+#X text 169 23 C;
+#X text 125 25 Z;
+#X obj 192 47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 152 201 sel 122 120 99 118;
+#X msg 224 72 kick 100 1000 100 10 800 10;
+#X msg 224 127 op_hat 200 12000 20 10 800 0.1;
+#X connect 0 0 4 0;
+#X connect 1 0 4 1;
+#X connect 2 0 4 2;
+#X connect 4 0 3 0;
+#X connect 4 0 3 1;
+#X connect 5 0 4 4;
+#X connect 6 0 7 0;
+#X connect 7 0 13 0;
+#X connect 8 0 4 4;
+#X connect 12 0 4 3;
+#X connect 13 0 0 0;
+#X connect 13 1 1 0;
+#X connect 13 2 2 0;
+#X connect 13 3 12 0;
+#X connect 14 0 4 4;
+#X connect 15 0 4 4;
