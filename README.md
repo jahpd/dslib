@@ -1,3 +1,4 @@
+
 # Design Sound Library for PureData
 
 This is my personal library of abstractions for [PureData](http://puredata.info/), following some ideas and exercises from Andy Farnnel's[Design Sound](http://mitpress.mit.edu/books/designing-sound) of .
@@ -19,17 +20,25 @@ If you have linux or mac, i suggest the following:
 
     $ git clone https://www.github.com/jahpd/dslib.git
 
-If you have windows, i suggest download github application and then
-download the source code from the application.
+If you have windows, i suggest download github application and then download the source code from the application.
 
-Open PureData, go to _Prefereces_ and then add the properly path
-search;
+Open PureData, go to _Prefereces_ and then add the properly path search;
 
 ![http://booki.flossmanuals.net/pure-data/_full/static/PureData-InstallingOSX-osx-install-7-en.png]
 
 In my machine is something like:
 
     ~/path/to/dslib/
+
+Set apply and re-open PD
+
+## Drums
+
+An set of pre-built externals
+
+# FX
+
+Some generated delay externals by python
 
 ## Additive
 
