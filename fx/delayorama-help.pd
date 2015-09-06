@@ -1,2 +1,2 @@
-#N canvas 0 22 450 300 10;
-#X obj 134 93 delayorama 3 35 6;
+#N canvas 15 22 450 300 10;
+#X obj 134 93 delayorama 3 35 71;
